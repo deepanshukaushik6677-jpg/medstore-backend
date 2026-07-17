@@ -12,7 +12,7 @@ class Settings(BaseSettings):
     environment: str = "development"
 
     # Comma-separated list, e.g. "http://localhost:5173,https://your-project.pages.dev"
-    cors_origins: str = "http://localhost:5173"
+    cors_origins: str = "http://localhost:5173,https://medstore-frontend.medstore.workers.dev/"
 
     @property
     def cors_origins_list(self) -> list[str]:
